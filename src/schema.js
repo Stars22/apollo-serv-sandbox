@@ -1,6 +1,6 @@
-const { gql } = require("apollo-server");
+const { gql } = require('apollo-server');
 
-const typeDefs = gql(`
+const typeDefs = gql`
   type Launch {
     id: ID!
     site: String
@@ -48,7 +48,6 @@ const typeDefs = gql(`
     cancelTrip(launchId: ID!): TripUpdateResponse!
     login(email: String): String
   }
-  
-`);
+`;
 
 module.exports = typeDefs;
